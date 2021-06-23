@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Workout Plan</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <h1>Workout Plan</h1>
+
+    <form>
+        <fieldset>
+            <p>
+                <label for="restrictions">Restrictions</label>
+                <input type="text" id="restrictions" name="restrictions">
+            </p>
+            <p>
+                <label for="client">Client</label>
+                <input type="text" id="client" name="client">
+            </p>
+            <p>
+                <label for="phase">Phase</label>
+                <input type="text" id="phase" name="phase">
+            </p>
+            <p>
+                <label for="week">Week</label>
+                <input type="text" id="week" name="week">
+            </p>
+        </fieldset>
+        
+        <h2>Session 1</h2>
+        <fieldset>
+            <p>
+                <label for="squat">Squat</label>
+                <select id="squat" name="squat">
+                    <option>Back</option>
+                    <option>Front</option>
+                    <option>Overhead</option>
+                </select>
+            </p>
+            <p>
+                <label for="squat-notes">Notes</label>
+                <textarea id="squat-notes" name="squat-notes"></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <label for="push">Push</label>
+                <select id="push" name="push">
+                    <option>Bench</option>
+                    <option>Push-up</option>
+                    <option>Press</option>
+                </select>
+            </p>
+            <p>
+                <label for="push-notes">Notes</label>
+                <textarea id="push-notes" name="push-notes"></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <label for="pull">Pull</label>
+                <select id="pull" name="pull">
+                    <option>Pull-up</option>
+                    <option>Chin-up</option>
+                </select>
+            </p>
+            <p>
+                <label for="pull-notes">Notes</label>
+                <textarea id="pull-notes" name="pull-notes"></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+</body>
+</html>
