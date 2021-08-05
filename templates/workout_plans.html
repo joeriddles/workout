@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Workouts{% endblock %}
+{% block content %}
+<ul>
+    {% for workout_plan in workout_plans %}
+    <li>
+        <a href="{{ workout_plan.workout_plan_id }}">
+            {{ workout_plan.client }} - {{ workout_plan.phase }}
+        </a>
+        <button>❌</button>
+    </li>
+    {% endfor %}
+</ul>
+<div>
+    <a href="create">Create Workout Plan</a>
+</div>
+{% endblock %}

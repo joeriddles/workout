@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Workout Plan {{ workout_plan.workout_plan_id }}{% endblock %}
+{% block content %}
+<h1>
+    {{ workout_plan.client }}
+</h1>
+<div>
+    {% for workout in workout_plan.workouts %}
+    <p>
+        {{ workout.category }}
+    </p>
+    {% endfor %}
+</div>
+{% endblock %}

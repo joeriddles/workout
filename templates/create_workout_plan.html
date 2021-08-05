@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block head %}
+<style>
+    label, input {
+        display: block;
+    }
+    input + * {
+        margin-top: 0.5rem;
+    }
+</style>
+{% endblock %}
+{% block title %}Create Workout Plan{% endblock %}
+{% block content %}
+<form method="POST" action="submit">
+    <label for="restrictions">Restrictions</label>
+    <input name="restrictions" type="text">
+    <label for="client">Client</label>
+    <input name="client" type="text">
+    <label for="phase">Phase</label>
+    <input name="phase" type="text">
+    <button type="submit">Create</button>
+</form>
+{% endblock %}
